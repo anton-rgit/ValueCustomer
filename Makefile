@@ -30,3 +30,9 @@ api-change-mode-to-assets:
 
 api-init-migrations:
 	docker-compose run --rm  php-cli php yii migrate --interactive=0
+
+fill-test-data:
+	docker-compose run --rm  php-cli php yii test-data/fill
+
+fill-value-customer-table:
+	docker-compose run --rm  php-cli php yii test-data/fill

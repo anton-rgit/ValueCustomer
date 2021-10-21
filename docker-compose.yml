@@ -44,6 +44,8 @@ services:
       - MYSQL_PASSWORD=pass
     volumes:
       - db-data:/var/lib/mysql
+    ports:
+      - "33066:3306"
     networks:
       - test
 
