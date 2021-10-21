@@ -35,4 +35,4 @@ fill-test-data:
 	docker-compose run --rm  php-cli php yii test-data/fill
 
 fill-value-customer-table:
-	docker-compose run --rm  php-cli php yii test-data/fill
+	docker-compose run --rm  php-cli php yii value-customer/fill-table
